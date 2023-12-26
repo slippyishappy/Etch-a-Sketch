@@ -1,0 +1,17 @@
+.container {
+    max-width: 500px;
+    max-height: 500px;
+    margin: auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-item {
+    border: 1px solid black;
+    height: 25px; 
+    width: 25px; 
+    margin:0;
+}
