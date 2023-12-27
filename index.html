@@ -5,23 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
 </head>
 <body>
+    <button class="change-size">Change size</button>
+    <button class="clear">Clear</button>
     <div class="container"></div>
-    <script>
-        let container = document.querySelector(".container");
-        let gridRow, gridItem;
-
-        for (let i = 0; i < 16; i++) {
-            gridRow = document.createElement('div');
-            gridRow.classList.add('grid-row');
-                for (let j = 0; j < 17; j++) {
-                    gridItem = document.createElement('div');
-                    gridItem.classList.add('grid-item');
-                    gridRow.appendChild(gridItem);
-                }
-            container.appendChild(gridRow);
-        }
-            </script>
 </body>
 </html>
